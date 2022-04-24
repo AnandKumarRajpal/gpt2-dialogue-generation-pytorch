@@ -340,7 +340,8 @@ if __name__=='__main__':
     assert args.mode in ["train", "infer"]
     assert args.model_type in [
         "gpt2", "gpt2-medium", "gpt2-large", "gpt2-xl",
-        "microsoft/DialoGPT-small", "microsoft/DialoGPT-medium", "microsoft/DialoGPT-large"
+        "microsoft/DialoGPT-small", "microsoft/DialoGPT-medium", "microsoft/DialoGPT-large",
+        "sberbank-ai/mGPT"
     ]
     
     args.data_dir = f"{args.data_dir}/{args.model_type}"

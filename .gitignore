@@ -129,7 +129,6 @@ dmypy.json
 .pyreo/
 
 # Large size directories
-data/
 saved_models/
 
 # Notebook

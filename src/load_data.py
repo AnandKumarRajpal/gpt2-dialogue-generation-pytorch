@@ -1,5 +1,5 @@
 from tqdm import tqdm
-from transformers import GPT2Tokenizer
+from transformers import GPT2Tokenizer, AutoTokenizer
 from process_data import *
 
 import argparse
@@ -74,11 +74,12 @@ if __name__=='__main__':
     
     assert args.model_type in [
         "gpt2", "gpt2-medium", "gpt2-large", "gpt2-xl",
-        "microsoft/DialoGPT-small", "microsoft/DialoGPT-medium", "microsoft/DialoGPT-large"
+        "microsoft/DialoGPT-small", "microsoft/DialoGPT-medium", "microsoft/DialoGPT-large",
+        "sberbank-ai/mGPT"
     ]
     
     print("Loading the tokenizer...")
-    tokenizer = GPT2Tokenizer.from_pretrained(args.model_type)
+    tokenizer = AutoTokenizer.from_pretrained(args.model_type)
     
     args.data_dir = f"{args.data_dir}/{args.model_type}"
     if not os.path.isdir(args.data_dir):

@@ -4,7 +4,7 @@ python src/main.py \
     --data_dir="data" \
     --train_prefix="train" \
     --valid_prefix="valid" \
-    --model_type="gpt2" \
+    --model_type="sberbank-ai/mGPT" \
     --bos_token="<bos>" \
     --sp1_token="<sp1>" \
     --sp2_token="<sp2>" \
