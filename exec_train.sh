@@ -11,7 +11,7 @@ python src/main.py \
     --gpu="0" \
     --lr=2e-5 \
     --warmup_ratio=0.0 \
-    --batch_size=8 \
+    --batch_size=4 \
     --num_workers=0 \
     --num_epochs=10 \
     --max_len=1024 \
